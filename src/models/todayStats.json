@@ -1,0 +1,90 @@
+[  
+  {  
+    "id": 1,
+    "title": "Page Views",
+    "logo": "../assets/images/icon-facebook.svg",  
+    "logoAlt": "Facebook logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "num": "87",
+    "percentage": "3%",
+    "positive": true  
+  }, 
+  {  
+    "id": 2,
+    "title": "Likes",
+    "logo": "../assets/images/icon-facebook.svg",  
+    "logoAlt": "Facebook logo",
+    "icon": "../assets/images/icon-down.svg",  
+    "iconAlt": "Down icon",
+    "num": "52",
+    "percentage": "2%",
+    "positive": false 
+  },
+  {  
+    "id": 3,
+    "title": "Likes",
+    "logo": "../assets/images/icon-instagram.svg",  
+    "logoAlt": "Instagram logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "num": "5462",
+    "percentage": "2257%",
+    "positive": true
+  },
+  {  
+    "id": 4,
+    "title": "Profile Views",
+    "logo": "../assets/images/icon-instagram.svg",  
+    "logoAlt": "Instagram logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "num": "52k",
+    "percentage": "1375%",
+    "positive": true  
+  },
+  {  
+    "id": 5,
+    "title": "Retweets",
+    "logo": "../assets/images/icon-twitter.svg",  
+    "logoAlt": "Twitter logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "num": "117",
+    "percentage": "303%",
+    "positive": true  
+  },
+  {  
+    "id": 6,
+    "title": "Likes",
+    "logo": "../assets/images/icon-twitter.svg",  
+    "logoAlt": "Twitter logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "num": "507",
+    "percentage": "553%",
+    "positive": true  
+  },
+  {  
+    "id": 7,
+    "title": "Likes",
+    "logo": "../assets/images/icon-youtube.svg",  
+    "logoAlt": "YouTube logo",
+    "icon": "../assets/images/icon-down.svg",  
+    "iconAlt": "Down icon",
+    "num": "107",
+    "percentage": "19%",
+    "positive": false
+  },
+  {  
+    "id": 8,
+    "title": "Total Views",
+    "logo": "../assets/images/icon-youtube.svg",  
+    "logoAlt": "YouTube logo",
+    "icon": "../assets/images/icon-down.svg",  
+    "iconAlt": "Down icon",
+    "num": "1407",
+    "percentage": "12%",
+    "positive": false
+  }
+]  

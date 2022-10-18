@@ -1,0 +1,50 @@
+[  
+  {  
+    "id": 1,  
+    "logo": "../assets/images/icon-facebook.svg",  
+    "logoAlt": "Facebook logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "name": "@nathanf",
+    "followers": "1987",
+    "type": "f o l l o w e r s",
+    "today": "12",  
+    "positive": true  
+  },  
+  {  
+    "id": 2,  
+    "logo": "../assets/images/icon-twitter.svg",  
+    "logoAlt": "Twitter logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "name": "@nathanf",
+    "followers": "1044",
+    "type": "f o l l o w e r s",
+    "today": "99",  
+    "positive": true  
+  }, 
+  {  
+    "id": 3,  
+    "logo": "../assets/images/icon-instagram.svg",  
+    "logoAlt": "Instagram logo",
+    "icon": "../assets/images/icon-up.svg",  
+    "iconAlt": "Up icon",
+    "name": "@realnathanf",
+    "followers": "11k",
+    "type": "f o l l o w e r s",
+    "today": "1099",  
+    "positive": true  
+  }, 
+  {  
+    "id": 4,  
+    "logo": "../assets/images/icon-youtube.svg",  
+    "logoAlt": "Youtube logo",
+    "icon": "../assets/images/icon-down.svg",  
+    "iconAlt": "Down icon",
+    "name": "Nathan F.",
+    "followers": "8239",
+    "type": "s u b s c r i b e r s",
+    "today": "144",  
+    "positive": false
+  } 
+]  
