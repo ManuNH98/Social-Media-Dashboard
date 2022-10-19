@@ -1,9 +1,0 @@
-/* Toggle */
-input:checked ~ .dot {
-  transform: translateX(100%);
-  background-color: #ffff;
-  left: 0.75rem;
-}
-input:checked ~ .background {
-  background-color: hsl(230, 22%, 74%);
-}

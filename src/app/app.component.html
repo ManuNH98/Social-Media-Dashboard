@@ -1,21 +1,20 @@
 <div id="app" [class]="isDark ? 'dark' : ''">
   <div class="bg-bgLight text-textLight dark:bg-bgDark dark:text-textDark desktop:h-screen desktop:px-52">
     <div id="header" class="p-5 desktop:flex desktop:justify-between desktop:items-center">
-      <div class="pb-3 border-b desktop:border-b-0">
+      <div class="pb-3 border-b dark:border-b-txtDark desktop:border-b-0">
         <h1 class="font-bold text-xl desktop:text-desk">Social Media Dashboard</h1>
         <h2 class="text-txtLight dark:text-txtDark font-bold">Total Followers: 23,004</h2>
       </div>
-      <div class="pt-3 desktop:pt-0 flex justify-between items-center desktop:gap-x-4">
+      <div class="pt-3 desktop:pt-0 flex justify-between items-center">
         <p class="font-bold text-txtLight dark:text-txtDark">Dark Mode</p>
-        <div class="flex items-center justify-center">
-          <label for="toggle" class="cursor-pointer">
-            <div class="relative">
-              <input (change)="toggleMode()" type="checkbox" id="toggle" class="sr-only" (click)="isDark = !isDark">
-              <div class="background block bg-gradient-to-r from-toggleDark1 to-toggleDark2 w-16 h-8 rounded-full"></div>
-              <div class="dot absolute left-1 top-1 bg-bgDark w-6 h-6 rounded-full transition"></div>
-            </div>
-          </label>
-        </div>
+        <button (click)="isDark = !isDark" aria-label="Toggle Mode" class="flex p-4 rounded-full">
+          <div *ngIf="isDark" class="flex justify-start pl-1 items-center bg-gradient-to-r from-toggleDark1 to-toggleDark2 w-16 h-8 rounded-full">
+            <div class="w-6 h-6 bg-bgDark rounded-full"></div>
+          </div>
+          <div *ngIf="!isDark" class="flex justify-end px-1 items-center bg-toggleLight w-16 h-8 rounded-full">
+            <div class="w-6 h-6 bg-bgLight rounded-full"></div>
+          </div>
+        </button>
       </div>
     </div>
     <div id="stats" class="p-5 flex flex-col desktop:flex-row desktop:justify-between desktop:items-center desktop:gap-y-0 desktop:gap-x-8 gap-y-5">
@@ -23,7 +22,7 @@
         <div [class]="getBrandColor(stat.color)" class="h-1 w-full rounded-t-lg"></div>
         <div class="flex flex-col gap-y-2 p-10">
           <div class="flex items-center justify-center gap-x-2">
-            <img [src]="stat.logo" [alt]="stat.logoAlt"/>
+            <img [src]="stat.logo" [alt]="stat.logoAlt" width="auto" height="auto"/>
             <p class="text-txtLight dark:text-txtDark font-bold text-cardHeading">{{ stat.name }}</p>
           </div>
           <div class="text-center">
@@ -31,7 +30,7 @@
             <p class="uppercase text-txtLight dark:text-txtDark">{{ stat.type }}</p>
           </div>
           <div [class]="getColor(stat.positive)" class="flex justify-center items-center gap-x-1 pt-3">
-            <img [src]="stat.icon" [alt]="stat.iconAlt"/>
+            <img [src]="stat.icon" [alt]="stat.iconAlt" width="auto" height="auto"/>
             <p class="font-bold text-cardHeading">{{ stat.today }} Today</p>
           </div>
         </div>
@@ -43,12 +42,12 @@
         <div *ngFor="let today of todayStats" class="flex flex-col gap-y-4 rounded-md bg-cardBgLight dark:bg-cardBgDark p-5 desktop:px-7">
           <div class="flex justify-between items-center">
             <p class="text-txtLight dark:text-txtDark font-bold">{{ today.title }}</p>
-            <img [src]="today.logo" [alt]="today.logoAlt"/>
+            <img [src]="today.logo" [alt]="today.logoAlt" width="auto" height="auto"/>
           </div>
           <div class="flex justify-between items-center ">
-            <p class="font-bold text-xl desktop:text-desk">{{ today.num }}</p>
+            <p class="font-bold text-desk desktop:text-desk">{{ today.num }}</p>
             <div [class]="getColor(today.positive)" class="flex justify-center items-center gap-x-1">
-              <img [src]="today.icon" [alt]="today.iconAlt"/>
+              <img [src]="today.icon" [alt]="today.iconAlt" width="auto" height="auto"/>
               <p class="font-bold text-cardHeading">{{ today.percentage }}</p>
             </div>
           </div>

@@ -40,15 +40,6 @@ export class AppComponent{
   stats: Stats[] = stats
   todayStats: TodayStats[] = todayStats
 
-  toggleMode(){
-    let toggle = <HTMLInputElement> document.getElementById('toggle');
-    if(this.isDark){
-      return !toggle.checked;
-    }else{
-      return toggle.checked;
-    }
-  }
-
   getColor(color: Boolean){
     if(color == true){
       return "text-limeGreen"
