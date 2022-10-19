@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,ts}", "./projects/**/*.{html,ts}"],
+  darkMode: "class", // or 'media'
   theme: {
     screens: {
       mobile: "375px",
@@ -17,6 +18,7 @@ module.exports = {
       cardHeading: "14px",
       sm: "0.8rem",
       base: "1rem",
+      desk: "2rem",
       xl: "1.5rem",
       xxl: "4rem",
     },
