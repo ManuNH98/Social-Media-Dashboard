@@ -4,7 +4,7 @@ Esta es una solución al [desafío del tablero de redes sociales con un selector
 
 ## Vista Previa
 
-![Preview](./public/preview.png)
+![Preview](/src/assets/readme.png)
 
 ## Stack Tecnológico
 
